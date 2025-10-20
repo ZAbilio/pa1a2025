@@ -25,7 +25,7 @@ while False:
 ''' print("\n 1-soma \n 2-subtração \n 3-multiplicação \n 4-divisão")'''
 
 
-print("calculadora de media ")
+'''print("calculadora de media ")
 nm1=float(input("informe o valor 1: "))
 nm2=float(input("informe o valor 2: "))
-nm3=float(input("informe o valor 3: "))
+nm3=float(input("informe o valor 3: "))'''
