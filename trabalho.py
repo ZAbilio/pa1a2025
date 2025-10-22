@@ -14,7 +14,7 @@ while True:
         alturaM.append(altura)
     else:
         totalH+=1
-    stop=input("Digite 'parar' para calcular, caso contrario precione qualquer botão  ")
+    stop=input("Digite 'parar' para calcular, caso contrario insira qualquer letra.  ")
     if stop.lower() == 'parar':
         break
 maiorAlt= max(alturas)
