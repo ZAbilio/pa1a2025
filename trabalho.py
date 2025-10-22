@@ -5,9 +5,9 @@ alturaM=[]
 totalH=0
 while True:
     nome=input("\t \t Informe o seu nome: ")
-    altura=float(input("\t \tInforme a sua altura (em metros): "))
+    altura=int(input("\t \t Informe a sua altura (em metros): "))
     sexo=input("\t \t informe o seu sexo \n (‘m’ para masculino ou ‘f’ para feminino): ")
-    filho=input("\t \t Informe a quantidade de filhos que você tem: ")
+    filho=int(input("\t \t Informe a quantidade de filhos que você tem: "))
     alturas.append(altura)
     filhos.append(filho)
     if sexo.lower()== "f":
@@ -20,12 +20,12 @@ while True:
 maiorAlt= max(alturas)
 menorAlt= min(alturas)
 if len(alturaM)>0:
-    mediaM= (sum(alturaM) / len(alturaM))
+    mediaM= sum(alturaM) / len(alturaM)
 else:
     mediaM=0
-mediaF=sum(filhos)/len(filhos)
+mediaF= sum(filhos) / len(filhos)
 print("\t \t Resultados")
-print("a maior pessoa o grupo possui",maiorAlt, "\n e a menor possui", menorAlt)
-print("a media feminina é: ", mediaM)
-print("o numero total de homens é de: ", totalH)
-print("e a media de filhos é de: ", mediaF)
+print("\t A maior pessoa o grupo possui",maiorAlt, "\n e a menor possui", menorAlt)
+print("\t A media feminina é: ", mediaM)
+print("\t O numero total de homens é de: ", totalH)
+print("\t A media de filhos é de: ", mediaF)
