@@ -1,14 +1,31 @@
 print("programa que compara as alturas, a media de filhos e n° de homens ")
-nome=[]
-altura=[]
-sexo=[]
+alturas=[]
+filhos=[]
+alturaM=[]
+totalH=0
 while True:
     nome=input("\t \t Informe o seu nome: ")
-    altura=float(input("\t \tInforme a sua altura atual: "))
-    sexo=input("\t \t informe o seu sexo \n (‘m’ para masculino ou ‘f’ para feminino): \n")
+    altura=float(input("\t \tInforme a sua altura (em metros): "))
+    sexo=input("\t \t informe o seu sexo \n (‘m’ para masculino ou ‘f’ para feminino): ")
     filho=input("\t \t Informe a quantidade de filhos que você tem: ")
-    stop=input("Digite 'parar' para encerrar e fazer os calculos ")
+    alturas.append(altura)
+    filhos.append(filho)
+    if sexo.lower()== "f":
+        alturaM.append(altura)
+    else:
+        totalH+=1
+    stop=input("Digite 'parar' para calcular, caso contrario precione qualquer botão  ")
     if stop.lower() == 'parar':
         break
-
-print(nome, altura, sexo,filho )
+maiorAlt= max(alturas)
+menorAlt= min(alturas)
+if len(alturaM)>0:
+    mediaM= (sum(alturaM) / len(alturaM))
+else:
+    mediaM=0
+mediaF=sum(filhos)/len(filhos)
+print("\t \t Resultados")
+print("a maior pessoa o grupo possui",maiorAlt, "\n e a menor possui", menorAlt)
+print("a media feminina é: ", mediaM)
+print("o numero total de homens é de: ", totalH)
+print("e a media de filhos é de: ", mediaF)
