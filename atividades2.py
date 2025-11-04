@@ -29,3 +29,20 @@ while False:
 nm1=float(input("informe o valor 1: "))
 nm2=float(input("informe o valor 2: "))
 nm3=float(input("informe o valor 3: "))'''
+'''def saudar():
+   print(" ola mundo")
+saudar()'''
+'''def soma(a,b):
+   return a+b
+v1=float(input("fale o valor 1: "))
+v2=float(input("fale o valor 2: "))
+resultado= soma(v1, v2)
+print(v1,"+", v2,"=",resultado)'''
+def media(v1,v2, v3, v4):
+   md=v1+v2+v3+v4/4
+n1=float(input("informe o valor 1: "))
+n2=float(input("informe o valor 2: "))
+n3=float(input("informe o valor 3: "))
+n4=float(input("informe o valor 4: "))
+media(n1, n2, n3, n4)
+
